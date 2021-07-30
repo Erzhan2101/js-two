@@ -1137,5 +1137,143 @@
 // }
 // console.log(example({a:10, b:20}))
 
+//---------DOM-----------//
 
+// alert("Привет")
+//
+// const answer = confirm("А тебе есть 18?")
+// if(answer){
+//     alert("Кури на здороье")
+// }else {
+//     alert("Сначала молоко!")
+// }
+//
+// const age = prompt("Сколько тебе лет?")
+// alert(`Тебе ${age} лет!`)
+//
+// console.log(window.document)
+// console.dir(window.document)
+//
+// // обрашение по классу
+// const desc = document.getElementsByClassName("description")
+//
+// console.log(desc)
+// console.dir(desc[0])
+// console.dir(desc[1])
+//
+//
+// // обрашение по тегу
+// const descByName = document.getElementsByTagName("p")
+// console.log(descByName)
+//
+//
+// // обрашение по id
+// const input = document.getElementById("name")
+//
+// //
+// const example1 = document.querySelectorAll(".description")
+// console.log(example1)
+//
+// const example2 = document.querySelectorAll("p")
+// console.log(example1)
+//
+// const example3 = document.querySelectorAll("#name")
+// console.log(example1)
+
+//конкретно элемент
+// const example4 = document.querySelector(".description")
+// console.log(example4)
+//
+// const example5 = document.querySelector("#name")
+// console.log(example5)
+//
+// const example6 = document.querySelector("h1")
+// console.log(example6)
+
+
+//изминение элемента
+// const title = document.querySelector(".title")
+// // // title.textContent = "Курить - это зло"
+// // // title.innerText = "<S>Курить - это зло</S>"
+// title.innerHTML = "<S>Курить - это зло</S>"
+// console.dir(title.textContent)
+//
+// const input = document.querySelector("#name")
+// input.value = "писать здесь"
+//
+// const btn = document.querySelector(".btn")
+// btn.addEventListener("click", () => {
+//     console.log("Boom!")
+// })
+
+
+//calculator
+
+// вызов
+// const num1 = document.querySelector(".num1")
+// const num2 = document.querySelector(".num2")
+// const out = document.querySelector(".out")
+// const sumBtn = document.querySelector(".sum")
+// const minusBtn = document.querySelector(".minus")
+// const multiBtn = document.querySelector(".multiplication")
+// const divideBtn =  document.querySelector(".divide")
+// const clearBtn = document.querySelector(".clear")
+
+//вариант короткий запис
+
+// const buttons = document.querySelectorAll(".btn")
+// buttons.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         let sumbol = btn.textContent
+//         let answer = 0
+//         if (sumbol === "+") {
+//             answer = Number(num1.value) + Number(num2.value)
+//         } else if (sumbol === "-") {
+//             answer = Number(num1.value) - Number(num2.value)
+//         } else if (sumbol === "*") {
+//             answer = Number(num1.value) * Number(num2.value)
+//         } else if (sumbol === "/") {
+//             answer = Number(num1.value) / Number(num2.value)
+//         }
+//         out.textContent = `Result: ${answer}`
+//         num1.value = ''
+//         num2.value = ''
+//     })
+// })
+//вариант для наглядгости
+
+// sumBtn.addEventListener("click", ()=>{
+//     let sum = Number(num1.value) + Number(num2.value)
+//     out.textContent = `Result: ${sum}`
+//
+// })
+//
+// minusBtn.addEventListener( "click", () =>{
+//     let sum = Number(num1.value) - Number(num2.value)
+//     out.textContent = `Result: ${sum}`
+//
+// })
+//
+// multiBtn.addEventListener( "click", () =>{
+//     let sum = Number(num1.value) * Number(num2.value)
+//     out.textContent = `Result: ${sum}`
+//
+// })
+//
+// divideBtn.addEventListener( "click", () =>{
+//     let sum = Number(num1.value) / Number(num2.value)
+//     out.textContent = `Result: ${sum}`
+//
+// })
+
+// clearBtn.addEventListener('click',()=>{
+//     num1.value = ''
+//     num2.value = ''
+// })
+
+
+// const items = Array.from(document.querySelectorAll("li"))
+// let newArray = items.map((item) => item.textContent)
+//
+// console.log(newArray)
 
